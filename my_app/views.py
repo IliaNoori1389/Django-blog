@@ -7,3 +7,4 @@ def index(request):
 def post_list(request):
     posts = Post.objects.all()
     return render(request, 'post-list.html', {'posts': posts})
+

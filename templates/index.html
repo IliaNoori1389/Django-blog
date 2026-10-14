@@ -5,6 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    {% extends 'base.html' %}
+
+    {% block content %}
+    <h1 style=text-align:center;color:blue;font-size:30px>Hello</h1>
+    <p style=text-align:center;color:blue>This is home page</p>
+    {% endblock %}
 </body>
 </html>
