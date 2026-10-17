@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    {% extends 'base.html' %}
+{% extends 'base.html' %}
+{% load static %}
 
-    {% block content %}
-    <h1 style=text-align:center;color:blue;font-size:30px>Hello</h1>
-    <p style=text-align:center;color:blue>This is home page</p>
-    {% endblock %}
-</body>
-</html>
+{% block title %}index{% endblock %}
+
+{% block content %}
+    <p>Last posts:</p>
+    {% for post in last_posts %}
+        <a href="https://www.google.com"class=center>{{post}}</a><br>
+    {% endfor %}
+    <p class="error center">{{error}}</p>
+    <a href="https://www.google.com" class="button">All posts</a>
+{% endblock %}

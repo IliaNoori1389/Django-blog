@@ -1,0 +1,39 @@
+body {
+  background-color: white;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  border: 2px solid black;
+  padding: 15px;
+}
+
+p {
+  font-family: verdana;
+  font-size: 25px;
+
+}
+a {
+  font-size: 20px;
+}
+.right {
+    display: block;
+    text-align: right;
+}
+
+.center {
+    display: block;
+    text-align: center;
+}
+.error {
+    color: red;
+}
+.button {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+}
